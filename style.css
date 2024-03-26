@@ -6,6 +6,14 @@
 
 /* Header Part */
 
+body{
+    scroll-behavior: smooth;
+}
+
+hr{
+  margin-top: 5px;
+  width: 80px;
+}
 
 li{
     list-style: none;
@@ -77,7 +85,7 @@ header{
 section {
   background:url("./Image/5008.jpg"); 
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
 }
 
 section .content{
@@ -237,7 +245,84 @@ section .content #desc{
 
 
   /* Classes Section */
-o
+    
+  .classes{
+    height: auto;
+    background-color: rgb(45, 43, 54);
+    padding: 30px;
+}
+
+  .classes .text1 h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 17px;
+ }
+ 
+  
+  .classes .text1 h4{
+    color: white;
+    margin: 15px;
+    text-align: center;
+  font-size: 14px;
+ }
+
+.box_classes{
+    display: flex;
+     gap:30px;
+     justify-content: space-around;
+     align-items: center;
+    margin:80px 0;
+}
+.box_classes .box{
+    height: 50vh;
+    width: 20vw;
+    background-color: rgb(19, 35, 57);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin: 10px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 36);
+  }
+
+   .box .small_box{
+     width: 80px;
+     aspect-ratio: 1;
+    background-color:rgb(210, 31, 31);
+    opacity: .8;
+    transform: rotate(45deg);
+    position: absolute;
+    top:-14%;
+    left:35%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.box .small_box .fa-dumbbell{
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: rotate(137deg);
+}
+.box .class_text{
+    padding: 20px;
+    color: rgb(235, 228, 228);
+}
+.box .class_text h2,p{
+    padding-top: 20px;
+}
+
+
+
   /* Classes Section */
 
  /* Coach Section */
@@ -261,30 +346,95 @@ o
 
 
      }
+     .coach_area{
+        display: flex;
+        justify-content: space-around;
+     }
 
-      .coaches_intro{
-       display: flex;
-       justify-content: space-around;
-
-    
-    }
-
-     .coach .coach_box{
-        margin: 30px;
-        width: 40%;
-        background-color: rgb(19, 35, 57);
+     .coach_area .coach_box{
+        background-color: rgb(42, 61, 86);
+        width: 42%;
         height: 30vh;
+        margin: 30px;
+        display: flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+     }
 
- }
- .coach .coach_box .img_section{
-    width: 20%;
-    background-color: red;
-    height: 20vh;
+     .coach_area .coach_box .coach_img{
+        width: 35%;
+        height: 25vh;
+        background: url("./Image/fitness_girl.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+     }
 
-}
+      .coach_box .coach_intro h3{
+        color: white;
+      }
+
+      .coach_box .coach_intro p{
+        color: rgb(194, 194, 194);
+
+      }
+ 
+     .coach_box .social_media{
+        width: 100%;
+     }
+     .coach_box .social_media .fa-brands{
+        color: white;
+        padding: 10px;
+     }
    
 
   /* Coach Section */
+
+
+
+  /* Footer Section */
+ 
+       footer{
+        height: 60vh;
+        background-color: rgb(0, 0, 40);
+        display: flex;
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+      
+       }
+     .box_social{
+        display: flex;
+        
+        gap:20px;
+     }
+    .box_social .box{
+        height: 50px;
+        aspect-ratio: 1;
+        background-color: skyblue;
+        transform: rotate(45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .box_social .box:hover{
+      
+        background-color: rgb(77, 170, 207);
+        
+        
+    }
+    .box_classes .box .fa-brands,.fa-twitter,.fa-instagram,.fa-telegram{
+
+        font-size: 25px;
+    }
+   
+  /* Footer Section */
 
   
 
@@ -629,7 +779,7 @@ o
              
               color: rgb(165, 152, 202);
               text-transform: uppercase;
-              font-size: 8px;
+              font-size: 11px;
               font-weight: bold;
               letter-spacing: 4px;
             }
@@ -638,7 +788,7 @@ o
              
                 color: white;
                 text-transform: uppercase;
-                font-size: 8px;
+                font-size: 12px;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                
             }
@@ -646,7 +796,6 @@ o
               
             section .content h1{
                 color: rgb(202, 54, 54);
-                font-size: 13px;
                 text-transform: uppercase;
                 word-spacing: 3px;
             }
@@ -655,10 +804,10 @@ o
                 color: white;
                 line-height: 15px;
                 font-family:cursive;
-                font-size: 10px;
+                font-size: 13px;
                 width: 200px;
-                height: 70px;
-                overflow-y: hidden;
+                height: auto;
+                
             }
             
             .btn{
@@ -698,7 +847,7 @@ o
             }
             
             .about .col_row{
-                width: 65%;
+                width: 100%;
                 height: 50vh;
                 display: grid;
                 grid-template-columns: auto auto;
@@ -759,7 +908,7 @@ o
                margin: 30px;
                font-size: 15px;
                text-align: center;
-               width: 100%;
+               width: 80%;
                line-height: 25px;
             }
             
@@ -781,6 +930,7 @@ o
                 color: white;
                 text-align: center;
                 letter-spacing: 5px;
+                font-size: 17px;
              }
              
               
@@ -788,7 +938,7 @@ o
                 color: white;
                 margin: 15px;
                 text-align: center;
-                letter-spacing: 2px;
+              font-size: 14px;
              }
             
             .box_classes{
@@ -798,9 +948,9 @@ o
                  align-items: center;
                 margin:80px 0;
             }
-             .box{
+             .box_classes .box{
                 height: 40vh;
-                width: 80%;
+                width: 70%;
                 background-color: rgb(19, 35, 57);
                 padding: 10px;
                 text-align: center;
@@ -809,12 +959,15 @@ o
                 justify-content: center;
                 gap: 30px;
                 position: relative;
+                margin: 20px;
+                box-shadow: 0px 0px 3px rgb(0, 0, 36);
               }
             
                .box .small_box{
                  width: 80px;
                  aspect-ratio: 1;
                 background-color:rgb(210, 31, 31);
+                opacity: .8;
                 transform: rotate(45deg);
                 position: absolute;
                 top:-14%;
@@ -841,6 +994,66 @@ o
             .box .class_text h2,p{
                 padding-top: 20px;
             }
+
+            .coach{
+                height: auto;
+            }
+            .coach_area{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                align-items: center;
+             }
+        
+             .coach_area .coach_box{
+                background-color: rgb(42, 61, 86);
+                width: 100%;
+                height: 30vh;
+                margin: 30px;
+                display: flex;
+                gap:10px;
+                align-items: center;
+                justify-content: center;
+             }
+             .coach_box .coach_intro{
+                margin-left: 10px;
+             }
+        
+             .coach_area .coach_box .coach_img{
+                width: 45%;
+                height: 25vh;
+                background: url("./Image/fitness_girl.jpg");
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: 10px;
+             }
+              
+        
+              .coach_box .coach_intro h3{
+                color: white;
+              }
+        
+              .coach_box .coach_intro p{
+                color: rgb(194, 194, 194);
+        
+              }
+         
+             .coach_box .social_media{
+                width: 100%;
+             }
+             .coach_box .social_media .fa-brands{
+                color: white;
+                padding: 10px;
+             }
+
+             .coach .text1 h2{
+                text-align: center;
+                color:white;
+                padding: 20px;
+                letter-spacing: 4px;
+                font-size: 15px;
+             }
             
            
 
