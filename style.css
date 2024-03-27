@@ -392,6 +392,90 @@ section .content #desc{
 
   /* Coach Section */
 
+  /* Contact us  */
+   .form_area{
+    height: auto;
+    background-color: skyblue;
+   }
+
+  .form_area .text1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  .form_area .form{
+    width: 60%;
+  }
+   
+  .form_area .form_detail{
+    display: flex;
+    justify-content: space-around;
+  }
+  .form_area .contact_info{
+    width: 40%;
+    height: 200px;
+  }
+
+  .form_detail .form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+
+  .form_btn{
+    margin: 10px;
+  }
+  .form_btn button{
+    padding: 10px;
+    width: 10vw;
+  }
+  .form_single #name,#email{
+    width: 49%;
+  }
+  input,textarea{
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+  }
+
+  .form_detail .contact_info{
+    margin-left: 20px;
+  }
+
+  .form_detail .contact_info .box1{
+    border: 1px solid white;
+    width: 80%;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 30px;
+  }
+
+    
+  .form_detail .contact_info .icon{
+    width: 30%;
+    height: inherit;
+    background-color: rgb(9, 164, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_detail .contact_info .icon .fa-solid{
+    font-size: 30px;
+    color: white;
+  }
+     
+  .form_detail .contact_info p{
+   color: white;
+   padding: 10px;
+  }
+
+
+
+
+    /* Contact us  */
+
+
 
 
   /* Footer Section */
@@ -803,8 +887,8 @@ section .content #desc{
             section .content #desc{
                 color: white;
                 line-height: 15px;
-                font-family:cursive;
-                font-size: 13px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 15px;
                 width: 200px;
                 height: auto;
                 
@@ -1007,24 +1091,24 @@ section .content #desc{
         
              .coach_area .coach_box{
                 background-color: rgb(42, 61, 86);
-                width: 100%;
-                height: 30vh;
+                width: 90%;
+                height: 50vh;
                 margin: 30px;
                 display: flex;
+                flex-direction: column;
                 gap:10px;
-                align-items: center;
-                justify-content: center;
              }
              .coach_box .coach_intro{
                 margin-left: 10px;
              }
         
              .coach_area .coach_box .coach_img{
-                width: 45%;
-                height: 25vh;
+                width: 100%;
+                height: 50vh;
                 background: url("./Image/fitness_girl.jpg");
-                background-position: 50% 50%;
+                background-position: 0 30%;
                 background-size: cover;
+                
                 background-repeat: no-repeat;
                 margin-left: 10px;
              }
@@ -1054,10 +1138,93 @@ section .content #desc{
                 letter-spacing: 4px;
                 font-size: 15px;
              }
+
+
+             /* Contact Section */
+
+
+               .form_area{
+                height: auto;
+               }
             
+              .form_area .form{
+                width: 100%;
+              }
+               
+              .form_area .form_detail{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+              }
+              .form_area .contact_info{
+                width: 100%;
+                height: auto;
+            
+              }
+            
+              .form_detail .form{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+              }
+            
+            
+              .form_btn{
+                margin: 10px;
+              }
+              .form_btn button{
+                padding: 10px;
+                width: 20vw;
+              }
+              .form_single #name,#email{
+                width: 49%;
+              }
+              input,textarea{
+                padding: 10px;
+                background: transparent;
+                border: 1px solid white;
+              }
+            
+              .form_detail .contact_info{
+                margin-left: 20px;
+              }
+            
+              .form_detail .contact_info .box1{
+                border: 1px solid white;
+                width: 80%;
+                margin-bottom: 10px;
+                display: flex;
+                gap: 30px;
+              }
+            
+                
+              .form_detail .contact_info .icon{
+                width: 30%;
+                height: inherit;
+                background-color: rgb(9, 164, 225);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .form_detail .contact_info .icon .fa-solid{
+                font-size: 30px;
+                color: white;
+              }
+                 
+              .form_detail .contact_info p{
+               color: white;
+               padding: 10px;
+              }
+            
+            
+
+
            
 
-          
+          footer{
+            
+            height: 40vh;
+          }
             
 
         }      
